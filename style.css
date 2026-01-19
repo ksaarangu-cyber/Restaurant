@@ -1,0 +1,297 @@
+/* General Styling */
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #fbb204;
+    
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    
+    
+}
+/*welcome text and quote */
+.welcome {
+   
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+    
+}
+.welcome img{
+    padding-left: 70px;
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+   
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 3px black;
+
+
+
+
+}
+/*bolt,wolt*/
+.img-btn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /*animates slowly,returns back*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.img-btn img {
+  width: 70px;
+  height: 20px;
+}
+.img-btn:hover{ /*pop effect*/
+  transform: scale(1.1);
+  
+}
+
+.pimg2{ /*parallax image*/
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(pexels-pranjall-kumar-150768-8609973.jpg);
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2px;
+    gap: 4px;
+
+}
+.pimg2 a{
+    text-decoration: none;
+}
+
+
+ h2{
+    color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 3px black;
+    display: flex;
+    justify-content: center;
+
+
+}
+h3{
+    color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 3px black;
+}
+.homemenu{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+  
+    
+}
+.homemenu h2{
+    text-align: center;
+    display: inline-block;
+
+    color: white;
+    border-bottom: 2px black solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:1px 1px 3px #333;
+}
+/*homepage pizza and drink image*/
+.menuimg{
+    
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+     position: relative;
+  
+
+  
+}
+.menuimg img{
+      height:400px;
+      width: 300px;
+       transition: transform 0.3s ease, box-shadow 0.3s ease   ; 
+        object-fit: cover;
+    
+}
+.imgbox{
+    position: relative;
+   
+}
+.menuimg img:hover{
+     transform: scale(1.1);
+     box-shadow :5px 5px 3px  #333;
+     
+     
+}
+.imgbox:hover .img-text{
+    color: #fbb204;
+    transform: translatex(-50%) scale(1.1);
+
+
+
+}
+/*menu name homepage*/
+.img-text {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: transform 0.3s ease ; 
+
+}
+.link{
+    text-decoration: none;
+    display: inline-block;
+}
+.ftr{
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.menuitems{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.menuitems img{
+    height: 70%;
+    width: 50%;
+}
+
+
+
+
+
+nav a:hover{
+    color: #fbb204;
+    border-bottom: #fbb204 2px solid;
+}
+h1{
+ 
+  font-size: 60px
+}
+.about{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.gmap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cntact{
+       display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding:10px;
+    font-size: 16px;
+    resize: vertical;
+}
+.gallery-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.gallery-section p {
+    margin-bottom: 30px;
+    color: #1ead1c;
+}
+/* Image Grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Gallery Images */
+.gallery-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menuimg{
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+    }
+    .menuitems img{
+    height: 90%;
+    width: 80%;
+}
+
+   
+}
